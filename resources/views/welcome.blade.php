@@ -6,12 +6,13 @@
 
         <title>Curso php</title>
 
-        <link rel =  "stylesheet" href="/css/style.css">
+        <link rel =  "stylesheet" href="/css/styles.css">
         <script src ="/js/scripts.js"></script>
 
     </head>
     <body> 
         <h1>Algum titulo</h1>
+        <img src = "/img/transferir.jpg" alt = "trasnferir">
         @if(10>5)
             <p> A condição é true </p>
         @endif
