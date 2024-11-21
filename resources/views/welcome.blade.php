@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Curso php</title>
 
-        <link rel =  "stylesheet" href="/css/styles.css">
-        <script src ="/js/scripts.js"></script>
-
-    </head>
-    <body> 
+        @extends('layouts.main')
+        @section('title', 'HDC EVENTS')
+        @section('content')
         <h1>Algum titulo</h1>
         <img src = "/img/transferir.jpg" alt = "trasnferir">
         @if(10>5)
@@ -30,5 +22,4 @@
             $name = "Shema";
             echo $name;
         @endphp
-    </body>
-</html>
+        @endsection

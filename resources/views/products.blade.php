@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
+@section('title', 'Produtos')
 
-        <title>Curso php</title>
-
-        <link rel =  "stylesheet" href="/css/styles.css">
-        <script src ="/js/scripts.js"></script>
-
-    </head>
-   
-<body> 
-
+@section('content')
 <h1>Isto é a pagina de produtos</h1>
-<a href="/"> voltar </a>
-</body>
-
-</html>
+@endsection
