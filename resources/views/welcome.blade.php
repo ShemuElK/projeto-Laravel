@@ -12,7 +12,7 @@
         @if($nome =="Matheus")
         <p> o nome é {{ $nome }} ele tem {{ $idade }} e trabalha como {{ $profissao }}</p>
         @else
-        <p> O nome não é Pedro Cara ...</p>
+        <p> O nomee não é Pedro Cara ...</p>
         @endif
         
         @for($i = 0; $i<count($arr); $i++)
