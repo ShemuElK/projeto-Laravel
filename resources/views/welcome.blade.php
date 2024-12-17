@@ -3,23 +3,33 @@
         @extends('layouts.main')
         @section('title', 'HDC EVENTS')
         @section('content')
-        <h1>Algum titulo</h1>
-        <img src = "/img/transferir.jpg" alt = "trasnferir">
-        @if(10>5)
-            <p> A condição é true </p>
-        @endif
-        <p>{{$nome}}</p>
-        @if($nome =="Matheus")
-        <p> o nome é {{ $nome }} ele tem {{ $idade }} e trabalha como {{ $profissao }}</p>
-        @else
-        <p> O nomee não é Pedro Cara ...</p>
-        @endif
-        
-        @for($i = 0; $i<count($arr); $i++)
-            <p>{{$arr[$i]}}- {{$i}}</p>
-        @endfor
-        @php
-            $name = "Shema";
-            echo $name;
-        @endphp
+        <div id="search-container" class="col-md-12">
+            <h1>Busque um evento</h1>
+            <form action="">
+                <input type="text" id="search" name = search class ="form-control" placeholder = "procurar..">
+            </form>
+            <div id="events-container" class="col-md-12">
+            <h2>Próximos Eventos</h2>
+            <p class = subtitle>Veja os eventos dos próximos dias</p>
+            <div id="cards-container" class="row">
+                @foreach($events as $event)
+                <div class="card col-md-3">
+                    <img src="img/eventimg.jpg" alt ="{{ $event->title }}">
+                    <div class="card-body">
+                        <p class="card-date">02/12/2024</p>
+                        <h5 class="card-title">{{ $event->title }}</h5>
+                        <p class="card-participants">X participantes</p>
+                        <a href="#" class="btn btn-primary">Saber mais</a>
+
+                    </div>
+                    
+
+                </div>
+                @endforeach
+            </div>
+            </div>
+
+
+        </div>
+   
         @endsection
